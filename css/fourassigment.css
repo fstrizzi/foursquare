@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#google_map {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+}
+
+h1.marker-heading {
+    margin-top: 0px;
+    line-height: 1;
+}
+
+#showReload {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+}
+
+#userMenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+}
+
+#venues {
+    overflow-y: scroll;
+    height: 200px;
+}
+
+#venuelist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#venuelist .panel-body { 
+    padding: 10px;
+}
+
+#venuelist li {
+    cursor: pointer;
+    padding: 5px 0px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+#venuelist li:hover, #venuelist li:focus {
+    background-color: #d5e9f7;
+}
+
+#venuelist li.left .venue-body {
+    margin-left: 60px;
+}
+
+#venuelist li.right .venue-body {
+    margin-right: 60px;
+}
+
+.venue-body .header {
+    line-height: 1.2;
+    font-size: 0.9em;
+}
+
+#venuelist li .venue-body p {
+    margin: 0;
+    color: #777777;
+}
+
+.glyphicon.spinning {
+    animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg); }
+    to { transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
